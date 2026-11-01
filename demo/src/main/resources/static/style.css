@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    overflow: hidden;
+}
+
+/* Glassmorphism Card Container */
+.form-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+    width: 360px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(168, 85, 247, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(168, 85, 247, 0.35);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #c084fc, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Glow & Focus Effects */
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* Gradient Action Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -5px rgba(168, 85, 247, 0.5);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #9333ea 0%, #4f46e5 100%);
+    box-shadow: 0 15px 25px -5px rgba(168, 85, 247, 0.7);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
